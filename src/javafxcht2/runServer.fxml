@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxcht2.RunServerController">
+   <children>
+      <VBox spacing="2.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="server_titel" alignment="CENTER" prefHeight="24.0" prefWidth="313.0" text="server stoping" />
+            <VBox>
+               <children>
+                  <Label prefWidth="100.0" text="Username" />
+                  <TextField fx:id="textfieldUsername" prefWidth="200.0" promptText="user" />
+               </children>
+            </VBox>
+            <VBox>
+               <children>
+                  <Label prefWidth="100.0" text="Port Number" />
+                  <TextField fx:id="textFieldIPortNumber" prefWidth="200.0" promptText="8899" />
+               </children>
+            </VBox>
+            <HBox />
+            <ToggleButton fx:id="buttone_start" mnemonicParsing="false" prefHeight="25.0" prefWidth="312.0" text="Start">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ToggleButton>
+            <HBox fx:id="hboxshow" alignment="CENTER" prefHeight="9.0" prefWidth="200.0" spacing="4.0">
+               <children>
+                  <Circle fill="#00ff33" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Server is running whating for client" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
